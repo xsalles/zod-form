@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import Montserrat from "../assets/fonts/Montserrat-VariableFont_wght.ttf";
 
 export const GlobalStyle = createGlobalStyle`
+
+
 
 
 html {
@@ -14,7 +15,8 @@ html {
   }
 
    * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
   }
   
   

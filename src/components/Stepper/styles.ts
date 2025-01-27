@@ -18,10 +18,12 @@ export const Circle = styled.span<ProgressProps>`
   border-radius: 50%;
   background-color: ${(props) => props.isActive ? '#007AFF' : 'transparent'};
   border: 1px solid ${(props) => props.isActive ? '#007AFF' : '#E5E5E5'};
+  transition: ease-out all 2s;
 `
 
 export const Line = styled.span<ProgressProps>`
   width: 40px;
   height: 2px;
   background-color: ${(props) => props.isActive ? '#007AFF' : '#E5E5E5'};
+  transition: ease-out all 1s;
 `
