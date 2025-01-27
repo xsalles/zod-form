@@ -1,7 +1,16 @@
 import FieldsetInput from "./composition/Input/input.composition";
+import FieldsetLabel from "./composition/Label/label.composition";
+import { Container } from "./styles";
 
-export default function Fieldset() {
+interface FieldsetProps {
+  text: string;
+}
+
+export default function Fieldset({ text }: FieldsetProps) {
   return (
-   <FieldsetInput/>
-  )
+    <Container>
+      <FieldsetLabel text={text} />
+      <FieldsetInput />
+    </Container>
+  );
 }

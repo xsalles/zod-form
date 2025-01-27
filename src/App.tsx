@@ -3,6 +3,7 @@ import Stepper from "./components/Stepper/stepper"
 import Alert from "./components/Alert/alert"
 import Button from "./ui/Button/button"
 import Fieldset from "./ui/Fieldset/fieldset"
+import { coutryCodes } from "./libs/phoneNumber"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     }
   }
 
+  console.log(coutryCodes[244])
 
   return (
     <>
@@ -27,7 +29,7 @@ function App() {
         <button onClick={handleNextStep}>next</button>
         <Alert/>
         <Button text="Send code"/>
-        <Fieldset/>
+        <Fieldset text="Enter your phone number"/>
     </>
   )
 }
