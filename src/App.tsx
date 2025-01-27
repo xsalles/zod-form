@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Stepper from "./components/Stepper"
 import Alert from "./components/Alert"
+import Button from "./ui/Button"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <button onClick={handlePreviousStep}>back</button>
         <button onClick={handleNextStep}>next</button>
         <Alert/>
+        <Button/>
     </>
   )
 }
