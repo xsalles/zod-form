@@ -2,9 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-
-
-
 html {
   display: flex;
   align-items: center;

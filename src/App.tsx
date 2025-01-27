@@ -1,7 +1,8 @@
 import { useState } from "react"
-import Stepper from "./components/Stepper"
-import Alert from "./components/Alert"
-import Button from "./ui/Button"
+import Stepper from "./components/Stepper/stepper"
+import Alert from "./components/Alert/alert"
+import Button from "./ui/Button/button"
+import Fieldset from "./ui/Fieldset/fieldset"
 
 function App() {
 
@@ -17,13 +18,16 @@ function App() {
     }
   }
 
+
   return (
     <>
+    
       <Stepper progress={progress}/>
       <button onClick={handlePreviousStep}>back</button>
         <button onClick={handleNextStep}>next</button>
         <Alert/>
-        <Button/>
+        <Button text="Send code"/>
+        <Fieldset/>
     </>
   )
 }
