@@ -8,8 +8,6 @@ export const Container = styled.div`
   gap: 16px;
 `
 
-
-
 export const Input = styled.input`
   width: 296px;
   height: 44px;
@@ -17,4 +15,8 @@ export const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid #E2E4E5;
+
+  &:focus {
+    border-bottom-color: #007AFF;
+  }
 `
